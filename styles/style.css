@@ -94,7 +94,8 @@ header {
   gap: 25px;
 }
 
-.tour-text-paragraph, .princing-text-paragraph {
+.tour-text-paragraph,
+.princing-text-paragraph {
   max-width: 670px;
   text-align: center;
 }
@@ -192,4 +193,88 @@ footer {
   font-family: "Montserrat";
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+@media (max-width: 1279px) {
+  .header-text h1 {
+    font-size: 5rem;
+  }
+
+  .header-text p {
+    font-size: 1.5rem;
+  }
+
+  .header-text {
+    max-width: 600px;
+  }
+
+  .tour-card,
+  .tour-card .card-image img,
+  .princing-card,
+  .princing-card .card-image img {
+    max-width: 216px;
+  }
+
+  .button-gray {
+    width: 160px;
+  }
+}
+
+@media (max-width: 920px) {
+  .tour-cards,
+  .princing-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-text h5 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2.7rem;
+  }
+
+  header {
+    background-position: right;
+    align-items: center;
+  }
+
+  .header-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .header-text p {
+    font-size: 1rem;
+  }
+
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+.section-browser, .section-browser, .section-pricing, .section-tour{
+  padding: 5%;
+}
+
+  p {
+    font-size: 1rem;
+  }
+
+  .footer-text h5 {
+    font-size: 0.8rem;
+  }
+
 }
